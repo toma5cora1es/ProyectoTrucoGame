@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QWMazo</class>
+ <widget class="QWidget" name="QWMazo">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="3">
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QWCarta" name="widget_4" native="true"/>
+     </item>
+     <item>
+      <widget class="QWCarta" name="widget_5" native="true"/>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="2">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QWCarta" name="widget" native="true"/>
+     </item>
+     <item>
+      <widget class="QWCarta" name="widget_2" native="true"/>
+     </item>
+     <item>
+      <widget class="QWCarta" name="widget_3" native="true"/>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="4">
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QWCarta" name="widget_6" native="true"/>
+     </item>
+     <item>
+      <widget class="QWCarta" name="widget_7" native="true"/>
+     </item>
+     <item>
+      <widget class="QWCarta" name="widget_8" native="true"/>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="5" rowspan="3">
+    <widget class="QTextEdit" name="textEdit">
+     <property name="maximumSize">
+      <size>
+       <width>300</width>
+       <height>16777215</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QWCarta</class>
+   <extends>QWidget</extends>
+   <header>qwcarta.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

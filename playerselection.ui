@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PlayerSelection</class>
+ <widget class="QWidget" name="PlayerSelection">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>725</width>
+    <height>321</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="0">
+    <widget class="QPushButton" name="ButtonIaAgresivavsIaAleatoria">
+     <property name="minimumSize">
+      <size>
+       <width>300</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial Black</family>
+       <pointsize>11</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Jugar -&gt;  IaAgresiva vs IaAleatoria</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" colspan="2">
+    <widget class="QLabel" name="Label">
+     <property name="font">
+      <font>
+       <family>Algerian</family>
+       <pointsize>48</pointsize>
+       <underline>true</underline>
+      </font>
+     </property>
+     <property name="text">
+      <string notr="true">EL TRUCO</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::RichText</enum>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QPushButton" name="ButtonHvsIaAgresiva">
+     <property name="minimumSize">
+      <size>
+       <width>300</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial Black</family>
+       <pointsize>11</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Jugar -&gt;  Humano vs IaAgresiva</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QPushButton" name="ButtonIaAgresivavsIaAleatoria_2">
+     <property name="minimumSize">
+      <size>
+       <width>300</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial Black</family>
+       <pointsize>11</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Jugar -&gt;  IaAgresiva vs IaFacil</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QPushButton" name="ButtonIaFacilvsIaAleatoria">
+     <property name="minimumSize">
+      <size>
+       <width>300</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial Black</family>
+       <pointsize>11</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Jugar -&gt;  IaFacil vs IaAleatoria</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QPushButton" name="ButtonHvsIaFacil">
+     <property name="minimumSize">
+      <size>
+       <width>300</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial Black</family>
+       <pointsize>11</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Jugar -&gt;  Humano vs IaFacil</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>ButtonIaAgresivavsIaAleatoria</sender>
+   <signal>clicked()</signal>
+   <receiver>PlayerSelection</receiver>
+   <slot>SelectGameIaAgresivaVsIaAleatoria()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>338</x>
+     <y>229</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>347</x>
+     <y>216</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ButtonIaAgresivavsIaAleatoria_2</sender>
+   <signal>clicked()</signal>
+   <receiver>PlayerSelection</receiver>
+   <slot>SelectGameIaAgresivaVsIaFacil()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>241</x>
+     <y>270</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>254</x>
+     <y>215</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ButtonHvsIaAgresiva</sender>
+   <signal>clicked()</signal>
+   <receiver>PlayerSelection</receiver>
+   <slot>SelectGameHumanVsIaAgresiva()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>415</x>
+     <y>270</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>416</x>
+     <y>289</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ButtonHvsIaFacil</sender>
+   <signal>clicked()</signal>
+   <receiver>PlayerSelection</receiver>
+   <slot>SelectGameHumanVsIaFacil()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>411</x>
+     <y>230</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>510</x>
+     <y>216</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ButtonIaFacilvsIaAleatoria</sender>
+   <signal>clicked()</signal>
+   <receiver>PlayerSelection</receiver>
+   <slot>SelectGameIaFacilVsIaAleatoria()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>269</x>
+     <y>299</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>380</x>
+     <y>300</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>SelectGameIaAgresivaVsIaAleatoria()</slot>
+  <slot>SelectGameIaAgresivaVsIaFacil()</slot>
+  <slot>SelectGameHumanVsIaAgresiva()</slot>
+  <slot>SelectGameHumanVsIaFacil()</slot>
+  <slot>SelectGameIaFacilVsIaAleatoria()</slot>
+ </slots>
+</ui>
